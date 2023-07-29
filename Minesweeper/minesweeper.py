@@ -276,16 +276,13 @@ class MinesweeperAI():
                         self.knowledge.append(new_sentence)
                 elif sentence2.cells.issubset(sentence1.cells):
                     new_cells = sentence1.cells - sentence2.cells
-                    new_count = sentence1.count = sentence1.count
+                    new_count = sentence1.count - sentence2.count
                     new_sentence = Sentence(new_cells, new_count)
                     if new_sentence not in self.knowledge:
-                        """ 
-                         BUG
-                           """
-                        print("New inferred knowledge:", new_sentences)
-                        new_sentences.append(new_sentence)
+                        print("New inferred knowledge:", new_sentence)
+                        self.knowledge.append(new_sentence)
         # add the new sentences to the knowledge base
-        self.knowledge.extend(new_sentences)
+        #self.knowledge.extend(new_sentences)
 
         # print("Knowledge Base after adding new sentence:", self.knowledge)
         print("Mines:", self.mines)
