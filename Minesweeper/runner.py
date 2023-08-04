@@ -1,3 +1,9 @@
+""" 
+CS50AI with Python
+Source code to run a graphical interface for tic tac toe simulation using pygame
+
+ """
+
 import pygame
 import sys
 import time

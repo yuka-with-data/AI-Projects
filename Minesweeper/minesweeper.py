@@ -200,8 +200,8 @@ class MinesweeperAI():
             sentence.mark_mine(cell)
         
         #print("Knowledge Base after marking mine:", self.knowledge)
-        print("Mines:", self.mines)
-        print("Safes:", self.safes)
+        #print("Mines:", self.mines)
+        #print("Safes:", self.safes)
 
     def mark_safe(self, cell):
         """
